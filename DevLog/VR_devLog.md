@@ -26,5 +26,6 @@ Build a virtual cinema with some interactable features
 - [x] Test on WebView
 - [x] Build the Virtual Theatre
   - [x] Seat Change
-- [ ] Test on the 3D audio
-- [ ] Bridge with the website
+- [ ] ~~Test on the 3D audio~~
+- [ ] Combine the webview with theatre
+- [ ] Bridge with the Movie RS website
