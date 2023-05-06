@@ -17,3 +17,7 @@ Capstone Project Phase II
 - [ ] Search function (**pending**)
 - [ ] Third-party platform portal
 - [ ] [**New branch work: Actively try on the VR platform** (**pending**)](/DevLog/VR_devLog.md)
+
+## Resources
+
+[Pico Dev Doc](https://developer-cn.pico-interactive.com/document/unity/)
