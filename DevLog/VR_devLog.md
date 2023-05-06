@@ -22,8 +22,8 @@ Build a virtual cinema with some interactable features
 - [x] Complete Moving
 - [x] Complete Snap turn
 - [x] Complete Grip
-- [ ] Complete WebView Component
-- [ ] Test on WebView
+- [x] Complete WebView Component
+- [x] Test on WebView
 - [ ] Build the Virtual Theatre
 - [ ] Test on the 3D audio
 - [ ] Bridge with the website
