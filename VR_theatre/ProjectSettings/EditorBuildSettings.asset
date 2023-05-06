@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/4_CanvasWorldSpaceDemo.unity
     guid: cab96f0e90d193d45ade2c440ca86d7d
+  - enabled: 1
+    path: Assets/Scenes/Example_Projector.unity
+    guid: 4a7963f7b65843e49ac73ddfd11957b5
   m_configObjects:
     Unity.XR.PXR.Settings: {fileID: 11400000, guid: ec7a87b71c33c1942b79af251ceeaddc, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 0f033f957497f63488d6022145590e83, type: 2}

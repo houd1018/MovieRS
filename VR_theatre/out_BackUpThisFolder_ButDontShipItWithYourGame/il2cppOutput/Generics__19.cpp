@@ -30065,6 +30065,14 @@ IL_000a:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 RuntimeObject* ImporterFunc_2_Invoke_m5680ABB46653E09A8FF7E480EB80B06AEB8C5503_Multicast(ImporterFunc_2_t6D43D911F6D4B444CDEDBAB8B0F203529C728B69* __this, RuntimeObject* ___0_input, const RuntimeMethod* method)
 {
 	il2cpp_array_size_t length = __this->___delegates_13->max_length;

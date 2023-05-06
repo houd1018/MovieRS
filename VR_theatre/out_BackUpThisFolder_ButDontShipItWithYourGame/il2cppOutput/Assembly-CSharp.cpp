@@ -472,6 +472,8 @@ struct EventSystem_t61C51380B105BE9D2C39C4F15B7E655659957707;
 struct Exception_t;
 // UnityEngine.InputSystem.UI.ExtendedPointerEventData
 struct ExtendedPointerEventData_t164B462A9B123B2EE69B7DEC4F33F6AA3DE7937F;
+// FallowTarget
+struct FallowTarget_tF0822FF151D080BC94C4A6E18EDEEC1D1DB6C7F6;
 // Vuplex.WebView.FileSelectionEventArgs
 struct FileSelectionEventArgs_t5722450CA7C3D8DA6F68E2B4C4B765435B340783;
 // Vuplex.WebView.Internal.FileSelectionMessage
@@ -570,6 +572,8 @@ struct ScriptDialogEventArgs_t9E39E654FCA21E003B3784641B2C1E0DE709EA36;
 struct ScrolledEventArgs_t55CF8E929DAD3F43A9B6CC11E3A2360BD25ED1BB;
 // Vuplex.Demos.SimpleWebViewDemo
 struct SimpleWebViewDemo_t32775CB451D7928DA5E066B1FD98977A2C7DF531;
+// SpinObj
+struct SpinObj_tFEA9E6E72A3EDEAE7634C9CEDF4D735D59DF625F;
 // UnityEngine.Sprite
 struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99;
 // System.Threading.Tasks.StackGuard
@@ -3805,6 +3809,13 @@ struct DefaultPointerInputDetector_tCE9B3FEAF8B1BDB42236B9162BDD8239466F88C0  : 
 	bool ____isHovering_13;
 };
 
+// FallowTarget
+struct FallowTarget_tF0822FF151D080BC94C4A6E18EDEEC1D1DB6C7F6  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.Transform FallowTarget::target
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___target_4;
+};
+
 // Vuplex.WebView.Internal.KeyboardManager
 struct KeyboardManager_tA114BAF8D62AC980416C78E86D2382D6C1522C5C  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -3881,6 +3892,17 @@ struct SimpleWebViewDemo_t32775CB451D7928DA5E066B1FD98977A2C7DF531  : public Mon
 {
 	// Vuplex.WebView.WebViewPrefab Vuplex.Demos.SimpleWebViewDemo::webViewPrefab
 	WebViewPrefab_t1D05B9246ECC522BE8D1D574B38EA4C6789105E3* ___webViewPrefab_4;
+};
+
+// SpinObj
+struct SpinObj_tFEA9E6E72A3EDEAE7634C9CEDF4D735D59DF625F  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// System.Single SpinObj::rotationleft
+	float ___rotationleft_4;
+	// System.Single SpinObj::rotationSpeed
+	float ___rotationSpeed_5;
+	// System.Single SpinObj::rotation
+	float ___rotation_6;
 };
 
 // UnityEngine.EventSystems.UIBehaviour
@@ -5441,6 +5463,10 @@ struct BaseWebViewPrefab_t9956951F2C38C7C18BE8AF8631B91014F4D1C532_StaticFields
 
 // Vuplex.WebView.DefaultPointerInputDetector
 
+// FallowTarget
+
+// FallowTarget
+
 // Vuplex.WebView.Internal.KeyboardManager
 struct KeyboardManager_tA114BAF8D62AC980416C78E86D2382D6C1522C5C_StaticFields
 {
@@ -5463,6 +5489,10 @@ struct KeyboardManager_tA114BAF8D62AC980416C78E86D2382D6C1522C5C_StaticFields
 // Vuplex.Demos.SimpleWebViewDemo
 
 // Vuplex.Demos.SimpleWebViewDemo
+
+// SpinObj
+
+// SpinObj
 
 // Vuplex.WebView.Internal.ViewportMaterialView
 
@@ -6105,6 +6135,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EventArgs_1__ctor_m11E1B7CFF0BE1E5FE5F78
 // T UnityEngine.Resources::Load<System.Object>(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Resources_Load_TisRuntimeObject_mD1AF6299B14F87ED1D1A6199A51480919F7C79D7_gshared (String_t* ___0_path, const RuntimeMethod* method) ;
 
+// System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
+// UnityEngine.Transform UnityEngine.Component::get_transform()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+// UnityEngine.Vector3 UnityEngine.Transform::get_position()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Transform::set_position(UnityEngine.Vector3)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+// System.Void UnityEngine.MonoBehaviour::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Input::GetKey(UnityEngine.KeyCode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434 (int32_t ___0_key, const RuntimeMethod* method) ;
+// System.Single UnityEngine.Time::get_deltaTime()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865 (const RuntimeMethod* method) ;
+// System.Void UnityEngine.Transform::Rotate(System.Single,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_Rotate_m7EA47AD57F43D478CCB0523D179950EE49CDA3E2 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, float ___0_xAngle, float ___1_yAngle, float ___2_zAngle, const RuntimeMethod* method) ;
 // System.Runtime.CompilerServices.AsyncVoidMethodBuilder System.Runtime.CompilerServices.AsyncVoidMethodBuilder::Create()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D AsyncVoidMethodBuilder_Create_m13D0B23DD350C14035918384E10AF641E6B9EE67 (const RuntimeMethod* method) ;
 // System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::Start<Vuplex.Demos.AdvancedWebViewDemo/<Start>d__2>(TStateMachine&)
@@ -6130,8 +6176,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* BaseWebViewPrefab_get_WebView_
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdvancedWebViewDemo__setDisplayedUrl_m758D3F3B9B1CBBB8DC3110FB002C93F4E023EE55 (AdvancedWebViewDemo_t61F70B0B72DA08E6D8A79FD7910D260A620C05E9* __this, String_t* ___0_url, const RuntimeMethod* method) ;
 // System.String System.String::Concat(System.String,System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B (String_t* ___0_str0, String_t* ___1_str1, String_t* ___2_str2, const RuntimeMethod* method) ;
-// System.Void UnityEngine.MonoBehaviour::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.MonoBehaviour::Invoke(System.String,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour_Invoke_mF724350C59362B0F1BFE26383209A274A29A63FB (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, String_t* ___0_methodName, float ___1_time, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Debug::Log(System.Object)
@@ -6140,8 +6184,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Web_SetUserAgent_m75543808E07C6EF76F09DD3690150C8C0CDC4670 (bool ___0_mobile, const RuntimeMethod* method) ;
 // Vuplex.WebView.WebViewPrefab Vuplex.WebView.WebViewPrefab::Instantiate(System.Single,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WebViewPrefab_t1D05B9246ECC522BE8D1D574B38EA4C6789105E3* WebViewPrefab_Instantiate_m4254A7AEB4A4CAC7CBF841E623FDFCC52DED5DB2 (float ___0_width, float ___1_height, const RuntimeMethod* method) ;
-// UnityEngine.Transform UnityEngine.Component::get_transform()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Transform::set_parent(UnityEngine.Transform)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_parent_m9BD5E563B539DD5BEC342736B03F97B38A243234 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Vector3::.ctor(System.Single,System.Single,System.Single)
@@ -6233,8 +6275,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Gyroscope_tA4CEC0F47FFB4CEB90410CC6B860D052BB
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gyroscope_set_enabled_m2B22BC93369BA61034A80350405FE1B493822DAB (Gyroscope_tA4CEC0F47FFB4CEB90410CC6B860D052BB35BE9E* __this, bool ___0_value, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Application::get_isEditor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Application_get_isEditor_mEAC51E3ACE6DCE438087FB14BD75A3C219D354D0 (const RuntimeMethod* method) ;
-// System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
 // System.Void UnityEngine.GameObject::SetActive(System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___0_value, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Input::GetMouseButtonDown(System.Int32)
@@ -6245,10 +6285,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SystemInfo_get_supportsGyroscope_m98477E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF (const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Gyroscope::get_rotationRateUnbiased()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Gyroscope_get_rotationRateUnbiased_m6B54A5F9A866E1F5005EA8B1575607DF2F3AB7A3 (Gyroscope_tA4CEC0F47FFB4CEB90410CC6B860D052BB35BE9E* __this, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Transform::Rotate(System.Single,System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_Rotate_m7EA47AD57F43D478CCB0523D179950EE49CDA3E2 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, float ___0_xAngle, float ___1_yAngle, float ___2_zAngle, const RuntimeMethod* method) ;
-// System.Boolean UnityEngine.Input::GetKey(UnityEngine.KeyCode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434 (int32_t ___0_key, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Input::GetAxis(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Input_GetAxis_m10372E6C5FF591668D2DC5F58C58D213CC598A62 (String_t* ___0_axisName, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Mathf::Repeat(System.Single,System.Single)
@@ -7870,6 +7906,157 @@ IL2CPP_EXTERN_C void DEFAULT_CALL WebView_removePointer(intptr_t);
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void FallowTarget::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FallowTarget_Start_m4BEC0C51F6ABDCACDF5515F0E7C1474BA6E59D90 (FallowTarget_tF0822FF151D080BC94C4A6E18EDEEC1D1DB6C7F6* __this, const RuntimeMethod* method) 
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void FallowTarget::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FallowTarget_Update_m29373402D4288EFC73E8DA5870170EE6E769C376 (FallowTarget_tF0822FF151D080BC94C4A6E18EDEEC1D1DB6C7F6* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (target != null)
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___target_4;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0029;
+		}
+	}
+	{
+		// transform.position = target.transform.position;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3 = __this->___target_4;
+		NullCheck(L_3);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
+		L_4 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_3, NULL);
+		NullCheck(L_4);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
+		L_5 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_4, NULL);
+		NullCheck(L_2);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_2, L_5, NULL);
+	}
+
+IL_0029:
+	{
+		// }
+		return;
+	}
+}
+// System.Void FallowTarget::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FallowTarget__ctor_m2A9C52605D6A502B1D2EE5AF9B6034D0F066C526 (FallowTarget_tF0822FF151D080BC94C4A6E18EDEEC1D1DB6C7F6* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SpinObj::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpinObj_Start_mEB63F22ECE04C041038A2F9A12F71139809FBB8D (SpinObj_tFEA9E6E72A3EDEAE7634C9CEDF4D735D59DF625F* __this, const RuntimeMethod* method) 
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void SpinObj::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpinObj_Update_mCBD9D50DAAABB546BA83291DD725B6CAA6F0F501 (SpinObj_tFEA9E6E72A3EDEAE7634C9CEDF4D735D59DF625F* __this, const RuntimeMethod* method) 
+{
+	{
+		// if (Input.GetKey(KeyCode.R))
+		bool L_0;
+		L_0 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)114), NULL);
+		if (!L_0)
+		{
+			goto IL_006f;
+		}
+	}
+	{
+		// rotation = rotationSpeed * Time.deltaTime;
+		float L_1 = __this->___rotationSpeed_5;
+		float L_2;
+		L_2 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		__this->___rotation_6 = ((float)il2cpp_codegen_multiply(L_1, L_2));
+		// if (rotationleft > 0)
+		float L_3 = __this->___rotationleft_4;
+		if ((!(((float)L_3) > ((float)(0.0f)))))
+		{
+			goto IL_003d;
+		}
+	}
+	{
+		// rotationleft -= rotation;
+		float L_4 = __this->___rotationleft_4;
+		float L_5 = __this->___rotation_6;
+		__this->___rotationleft_4 = ((float)il2cpp_codegen_subtract(L_4, L_5));
+		goto IL_0054;
+	}
+
+IL_003d:
+	{
+		// rotation = rotationleft;
+		float L_6 = __this->___rotationleft_4;
+		__this->___rotation_6 = L_6;
+		// rotationleft = 0;
+		__this->___rotationleft_4 = (0.0f);
+	}
+
+IL_0054:
+	{
+		// transform.Rotate(0, rotation, 0);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		float L_8 = __this->___rotation_6;
+		NullCheck(L_7);
+		Transform_Rotate_m7EA47AD57F43D478CCB0523D179950EE49CDA3E2(L_7, (0.0f), L_8, (0.0f), NULL);
+	}
+
+IL_006f:
+	{
+		// }
+		return;
+	}
+}
+// System.Void SpinObj::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpinObj__ctor_m34E2871D9D82A6641880B6AD1DCD0C6F3E7985CD (SpinObj_tFEA9E6E72A3EDEAE7634C9CEDF4D735D59DF625F* __this, const RuntimeMethod* method) 
+{
+	{
+		// public float rotationleft = 360;
+		__this->___rotationleft_4 = (360.0f);
+		// public float rotationSpeed = 10;
+		__this->___rotationSpeed_5 = (10.0f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
