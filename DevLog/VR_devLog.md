@@ -6,7 +6,7 @@ Build a virtual cinema with some interactable features
 
 *Hardware Platform: pico Neo3*
 
-*Dev Platform: Unity3D*
+*Dev Platform: Unity3D ver_2021.3.21f1c1*
 
 ## Preliminary Plan
 
