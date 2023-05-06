@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2429948668041638258}
   - component: {fileID: 8290311259306492202}
   - component: {fileID: 2738265808340821750}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: theater_ChairLow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
