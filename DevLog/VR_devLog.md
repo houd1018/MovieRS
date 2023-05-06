@@ -24,6 +24,7 @@ Build a virtual cinema with some interactable features
 - [x] Complete Grip
 - [x] Complete WebView Component
 - [x] Test on WebView
-- [ ] Build the Virtual Theatre
+- [x] Build the Virtual Theatre
+  - [x] Seat Change
 - [ ] Test on the 3D audio
 - [ ] Bridge with the website
