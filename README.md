@@ -29,3 +29,5 @@ Capstone Project Phase II
 [Unity XR Input Manual](https://docs.unity3d.com/Manual/xr_input.html)
 
 [free art assest - theater](https://assetstore.unity.com/packages/3d/props/interior/vr-cinema-for-mobile-150120)
+
+Public IP = 120.76.197.31:8122

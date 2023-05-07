@@ -24,7 +24,7 @@ SECRET_KEY = '3r8%azo4sf)2yvl-!pa!lav)ao^6$_eoc_8bhmf-f8!^wypb)!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['movie1.colaplusice.com', 'localhost', '127.0.0.1', '192.168.31.171']
+ALLOWED_HOSTS = ['movie1.colaplusice.com', 'localhost', '127.0.0.1', '192.168.31.171', '120.76.197.31']
 
 # Application definitionauth_user_user_permissions
 
@@ -141,3 +141,4 @@ STATICFILES_DIRS = [
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
