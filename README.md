@@ -11,7 +11,7 @@ Capstone Project Phase II
 
 ## Remaining Work
 
-- [ ] Set up this website on Server
+- [x] Set up this website on Server
 - [ ] UI & user profile modification (**pending**)
 - [ ] Recommendation system test
 - [ ] Search function (**pending**)
