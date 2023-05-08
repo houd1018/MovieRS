@@ -15,7 +15,7 @@ Capstone Project Phase II
 - [ ] UI & user profile modification (**pending**)
 - [ ] Recommendation system test
 - [ ] Search function (**pending**)
-- [ ] Third-party platform portal
+- [x] Third-party platform portal
 - [x] [**New branch work: VR platform Complete** (**pending**)](/DevLog/VR_devLog.md)
 
 ## Resources
