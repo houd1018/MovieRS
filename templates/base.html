@@ -32,8 +32,8 @@
                     <nav>
                         <div class="wrap-nav">
                             <ul>
-                                <li class="active" ><a href= {% url 'index' %}>首页</a></li>
-                                <li class="active"><a href= {% url 'all_tags' %}>标签</a></li>
+                                <li class="active" ><a href= "{% url 'index' %}">首页</a></li>
+                                <li class="active"><a href= "{% url 'all_tags' %}">标签</a></li>
                                 {% if request.session.login_in == True %}
                                     <li class="active"><a href="{% url 'personal' %}"float: left>{{ request.session.name }}</a></li>
                                     <li class="active"><a href="{% url 'logout' %}"float: left>退出登录</a></li>
@@ -46,10 +46,41 @@
                             </ul>
                         </div>
                     </nav>
+                    <form action="{% url 'search' %}" method="post" autocomplete="on" style="float:right; margin-top: 5px">
+                            <input type="text" name="search" placeholder="请输入关键词" class="text">
+                            <input type="submit" name="submit" value="🔍搜索" class="search">
+                    </form>
                 </div>
             </div>
         </div>
     </header>
+    <!--////////////////////////////////////Search box style-->
+    <style type="text/css" >
+        input{
+            text-align: center;
+        }
+        input.text {
+            display: inline-block;
+            border: 0;
+            width: 260px;
+            height: 35px;
+            font-size: 14px;
+            outline: none;
+            border: 2px solid #3f4044;
+        }
+        input.search {
+
+            width: 90px;
+            height: 38px;
+            border: 2px solid #3f4044;
+            outline: none;
+            cursor: pointer;
+            /*   cursor: pointer;   鼠标悬停或点击时button时鼠标变成其他图标  */
+            text-align: center;
+            background-color: #3f4044;
+            color: #FFFFFF;
+        }
+    </style>
     <!--////////////////////////////////////Container-->
     <section id="container">
         <div class="wrap-container zerogrid">
