@@ -3,7 +3,7 @@
 {% block main_content %}
     <div class="warp-content">
         <div class="container-fluid">
-            <h1 align="center" style="margin-bottom: 20px">个人信息</h1>
+            <h1 align="center" style="margin-bottom: 20px"><a>个人信息</a></h1>
             <div class="thumbnail movie">
                 <div class="row" style="margin-top: 20px">
                     <div class="col-md-9 col-md-offset-1">
@@ -14,12 +14,12 @@
                             <div class="col-md-8 col-sm-12">
                                 <div class="row">
                                     <p style="padding: 10px;margin-left: 5px;font-size: 20px">
-                                        用户名: {{ user.username }}
+                                        <a> 用户名: {{ user.username }} </a>
                                     </p>
                                 </div>
                                 <div class="row">
                                     <p style="padding: 10px;margin-left: 5px;font-size: 20px">
-                                        邮箱: {{ user.email }}
+                                        <a> 邮箱: {{ user.email }} </a>
                                     </p>
                                 </div>
                             </div>
@@ -40,26 +40,46 @@
                         </div>
                     </div>
                 </div>
+                <h1 align="center" style="margin-top: 40px; margin-bottom: 20px"><a>信息重置与修改</a></h1>
                 <div class="row" style="margin-top: 20px">
                     <div class="col-md-9 col-md-offset-1">
-                        <form action="{% url 'personal' %}" method='post' autocomplete="on">
-                            {% csrf_token %}
-                            {% for field in form %}
-                                <div class="form-group">
-                                    {{ field.label_tag }}
-                                    {{ field.errors }}
-                                    {{ field }}
-                                </div>
-                            {% endfor %}
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <button type="reset" class="btn-lg btn-block btn-danger ">重置</button>
-                                </div>
-                                <div class="col-md-6">
-                                    <button type="submit" class="btn-lg btn-success btn-block">修改信息</button>
+                        <div class="row">
+                            <div class="col-md-3 ">
+                                <div class="row">
+                                    <p style="padding: 14px;margin-left: 50px;font-size: 20px">
+                                        <a>密码：</a>
+                                    </p>
+                                    <p style="padding: 14px;margin-left: 50px;font-size: 20px">
+                                        <a>用户名：</a>
+                                    </p>
+                                    <p style="padding: 14px;margin-left: 50px;font-size: 20px">
+                                        <a>邮箱：</a>
+                                    </p>
                                 </div>
                             </div>
-                        </form>
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <form action="{% url 'personal' %}" method='post' autocomplete="on">
+                                        {% csrf_token %}
+                                        {% for field in form %}
+                                            <div class="form-group">
+                                                {{ field.label_tag }}
+                                                {{ field.errors }}
+                                                {{ field }}
+                                            </div>
+                                        {% endfor %}
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <button type="reset" class="btn-lg btn-block btn-danger ">重置</button>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <button type="submit" class="btn-lg btn-success btn-block">修改信息</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
