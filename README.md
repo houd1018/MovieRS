@@ -12,9 +12,9 @@ Capstone Project Phase II
 ## Remaining Work
 
 - [x] Set up this website on Server
-- [ ] UI & user profile modification (**pending**)
+- [x] UI & user profile modification
 - [ ] Recommendation system test
-- [ ] Search function (**pending**)
+- [x] Search function
 - [x] Third-party platform portal
 - [x] [**New branch work: VR platform Complete** (**pending**)](/DevLog/VR_devLog.md)
 
