@@ -155,17 +155,15 @@ def movie(request, movie_id):
     return render(request, "movie.html", locals())
 
 
-def search(request):  # 搜索
+def search(request):  # Search Function
     if request.method == "POST":  # 如果搜索界面
         key = request.POST["search"]
         request.session["search"] = key  # 记录搜索关键词解决跳页问题
     else:
-        key = request.session.get("search")  # 得到关键词
+        key = request.session.get("search", "肖申克")  # 得到关键词
     movies = Movie.objects.filter(
         Q(name__icontains=key) | Q(intro__icontains=key) | Q(director__icontains=key)
     )  # 进行内容的模糊搜索
-    page_num = request.GET.get("page", 1)
-    movies = movies_paginator(movies, page_num)
     return render(request, "items.html", {"movies": movies, 'title': '搜索结果'})
 
 #所有标签
